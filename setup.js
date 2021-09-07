@@ -16,6 +16,7 @@ if (admin.length === 1) {
 
                     admin.push(`${answer}@c.us`)
                     fs.writeFileSync('./database/admin.json', JSON.stringify(admin, null, 4))
+                    rl.close()
                 } else add()
             })
         })
