@@ -17,5 +17,6 @@ module.exports = {
     balance: toObject(db).balance,
     user: toObject(db).user,
     level: toObject(db).level,
-    cooldown: toObject(db).cooldown
+    cooldown: toObject(db).cooldown,
+    admin: require('./admin.json')
 }

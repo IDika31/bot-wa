@@ -76,14 +76,7 @@ const handler = async (Client, msg) => {
     }
         
     if (isGroup) {
-        if (isCmd) {
-            const group = ['62895347043008-1616406256@g.us', '6285157992640-1622937002@g.us', '6287774088481-1604712050@g.us']
-            if (!group.includes(message.from)) {
-                await client.send(message.from, 'Bot ini hanya bisa digunakan di dalam grup IDika Bot!\n\nhttps://chat.whatsapp.com/JpUD168n1KD3bQ3RQdunpR')
-                await Client.modifyChat(message.from, ChatModification.clear)
-                return await Client.modifyChat(message.from, ChatModification.delete)
-            }
-            
+        if (isCmd) {            
             if (args[0] === 'register' || args[0] === 'reg') {
                 command(client, message, args)
             } else {
@@ -93,13 +86,6 @@ const handler = async (Client, msg) => {
                     client.reply('Silahkan registrasi terlebih dahulu sebelum menggunakan bot dengan ;register')
                 }
             }
-        }
-    } else {
-        if (isCmd) {
-            if(msg.key.fromMe) return
-            await client.send(message.from, 'Bot ini hanya bisa digunakan di dalam grup IDika Bot!\n\nhttps://chat.whatsapp.com/JpUD168n1KD3bQ3RQdunpR')
-            await Client.modifyChat(message.from, ChatModification.clear)
-            return await Client.modifyChat(message.from, ChatModification.delete)    
         }
     }
 };
