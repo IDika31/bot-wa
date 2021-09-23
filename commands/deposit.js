@@ -1,5 +1,6 @@
 const db = require('../database/')
 const fs = require('fs')
+const ms = require('pretty-ms')
 require('../src/utils/func')
 
 const deposit = {

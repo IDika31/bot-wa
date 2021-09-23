@@ -1,6 +1,5 @@
 const { WAConnection: wa, ReconnectMode: reconnect } = require('@adiwajshing/baileys')
 const fs = require('fs')
-const qrcode = require('qrcode-terminal')
 const spinnerCLI = require('cli-spinners').moon
 const Spinnies = require('spinnies')
 const func = require('./utils/func')

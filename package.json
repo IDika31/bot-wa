@@ -13,14 +13,10 @@
   "license": "ISC",
   "dependencies": {
     "@adiwajshing/baileys": "^3.5.2",
-    "cfonts": "^2.9.2",
-    "child_process": "^1.0.2",
     "cli-spinners": "^2.6.0",
     "dotenv": "^9.0.2",
     "express": "^4.17.1",
-    "libphonenumber-js": "^1.9.17",
     "pretty-ms": "^7.0.1",
-    "qrcode-terminal": "^0.12.0",
     "random": "^3.0.6",
     "request": "^2.88.2",
     "spinnies": "^0.5.1"
