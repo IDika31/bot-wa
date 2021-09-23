@@ -19,7 +19,6 @@ Gunakan ;register (nama) untuk registrasi ke bot!`
             id: message.author,
             name: args[1],
             rankLevel: 0,
-            claimed: []
         })
         fs.writeFileSync('./database/user.json', JSON.stringify(db.user, null, 4))
 
@@ -29,14 +28,6 @@ Gunakan ;register (nama) untuk registrasi ke bot!`
                 bank: 0
             }
             fs.writeFileSync('./database/balance.json', JSON.stringify(db.balance, null, 4))
-        }
-        if (!db.level[message.author]) {
-            db.level[message.author] = {
-                level: 1,
-                xp: 0,
-                allxp: 0
-            }
-            fs.writeFileSync('./database/level.json', JSON.stringify(db.level, null, 4))
         }
 
         return client.reply(`Sukses registrasi dengan nama *${args[1]}*`)
